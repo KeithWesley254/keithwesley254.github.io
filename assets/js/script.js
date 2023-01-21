@@ -14,26 +14,27 @@ const addEventOnElements = function (elements, eventType, callback) {
 Send Email
 */
 
-const btnSubmit = document.getElementById('submit-btn')
-const inputs = document.querySelector('form')
-btnSubmit.addEventListener('click', () => {
+// const btnSubmit = document.getElementById('submit-btn')
+// const inputs = document.querySelector('form')
+// btnSubmit.addEventListener('click', () => {
 
-    const name = (inputs.elements["name"].value).trim()
-    const email = (inputs.elements["email_address"].value).trim()
-    const msg = (inputs.elements["message"].value.trim())
-    const subject = (inputs.elements["subject"].value).trim()
-    if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !subject.length > 0) {
-        alert("Please fill all the fields")
-        return
-    }
-    Email.send({
-        SecureToken :"1d78991f-8dc2-4a9c-ab32-6804ee75afb0",
-        To: "keithwesley187@gmail.com",
-        From: email,
-        Subject: subject,
-        Body: msg + "<br>" + name
-    }).then(msg => alert("Email was sent successfully!"))
-})
+//     const name = (inputs.elements["name"].value).trim()
+//     const email = (inputs.elements["email_address"].value).trim()
+//     const msg = (inputs.elements["message"].value.trim())
+//     const subject = (inputs.elements["subject"].value).trim()
+
+//     if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !subject.length > 0) {
+//         alert("Please fill all the fields")
+//         return
+//     }
+//     Email.send({
+//         SecureToken :"1d78991f-8dc2-4a9c-ab32-6804ee75afb0",
+//         To: "keithwesley187@gmail.com",
+//         From: "keithwesley187@gmail.com",
+//         Subject: subject,
+//         Body: 'Name:' + name + "<br>" + "Email:" + email + "<br>" + 'Message:' + msg 
+//     }).then(msg => alert(msg))
+// })
 
 
 /*
