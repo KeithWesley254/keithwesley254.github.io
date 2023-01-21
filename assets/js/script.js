@@ -27,7 +27,7 @@ btn.addEventListener('click', () => {
         return
     }
     Email.send({
-        SecureToken :"cc9a7a0e-d20f-426a-9bc4-d38d17936430",
+        SecureToken :"1d78991f-8dc2-4a9c-ab32-6804ee75afb0",
         To: "keithwesley187@gmail.com",
         From: email,
         Subject: subject,
