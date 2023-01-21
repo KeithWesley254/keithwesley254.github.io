@@ -22,7 +22,7 @@ btn.addEventListener('click', () => {
     const email = (inputs.elements["email_address"].value).trim()
     const msg = (inputs.elements["message"].value.trim())
     const subject = (inputs.elements["subject"].value).trim()
-    if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !phone.length > 0) {
+    if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !subject.length > 0) {
         alert("Please fill all the fields")
         return
     }
