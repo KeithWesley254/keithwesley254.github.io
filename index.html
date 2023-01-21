@@ -542,17 +542,17 @@
 
             </div>
 
-            <form onsubmit="return false" class="contact-form" data-reveal="right">
+            <form onsubmit="Mail(); reset(); return false" class="contact-form" data-reveal="right">
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
+                <input type="text" id="Name" name="name" placeholder="Name *" required class="input-field">
 
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+                <input type="email" id="Email" name="email_address" placeholder="Email *" required class="input-field">
               </div>
 
-              <input type="text" name="subject" placeholder="Subject *" required class="input-field">
+              <input type="text" id="Subject" name="subject" placeholder="Subject *" required class="input-field">
 
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+              <textarea name="message" id="Message" placeholder="Message *" required class="input-field"></textarea>
 
               <button id="submit-btn" type="submit" class="btn btn-secondary">Send message</button>
 
