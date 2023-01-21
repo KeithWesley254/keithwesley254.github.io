@@ -14,9 +14,9 @@ const addEventOnElements = function (elements, eventType, callback) {
 Send Email
 */
 
-const btn = document.getElementById('submit-btn')
+const btnSubmit = document.getElementById('submit-btn')
 const inputs = document.querySelector('form')
-btn.addEventListener('click', () => {
+btnSubmit.addEventListener('click', () => {
 
     const name = (inputs.elements["name"].value).trim()
     const email = (inputs.elements["email_address"].value).trim()
