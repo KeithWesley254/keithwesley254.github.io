@@ -14,12 +14,13 @@ const addEventOnElements = function (elements, eventType, callback) {
 Send Email
 */
 
-function Mail() {
+const inputs = document.querySelector('form')
+btn.addEventListener('click', () => {
 
-    let name = document.getElementById('Name').value;
-    let email = document.getElementById('Email').value;
-    let msg = document.getElementById('Message').value;
-    let subject = document.getElementById('Subject').value;
+    const name = (inputs.elements["name"].value).trim()
+    const email = (inputs.elements["email_address"].value).trim()
+    const msg = (inputs.elements["message"].value.trim())
+    const subject = (inputs.elements["subject"].value).trim()
     if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !subject.length > 0) {
         alert("Please fill all the fields")
         return
@@ -31,7 +32,7 @@ function Mail() {
         Subject: subject,
         Body: msg + "<br>" + name
     }).then(msg => alert("Email was sent successfully!"))
-}
+})
 
 
 /*
