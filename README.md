@@ -4,4 +4,4 @@
 
 # License
 
-[MIT LICENSE](./README.md)
+[MIT LICENSE](./LICENSE)
