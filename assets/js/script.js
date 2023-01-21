@@ -16,10 +16,10 @@ Send Email
 
 function Mail() {
 
-    const name = document.getElementById('Name').value
-    const email = document.getElementById('Email').value
-    const msg = document.getElementById('Message').value
-    const subject = document.getElementById('Subject').value
+    let name = document.getElementById('Name').value;
+    let email = document.getElementById('Email').value;
+    let msg = document.getElementById('Message').value;
+    let subject = document.getElementById('Subject').value;
     if (!name.length > 0 || !email.length > 0 || !msg.length > 0 || !subject.length > 0) {
         alert("Please fill all the fields")
         return
